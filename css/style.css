@@ -250,17 +250,87 @@ nav ul li a {
 /* Testimonials Section */
 .testimonials {
     padding: 40px 20px;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 20px auto;
     text-align: center;
+    position: relative;
 }
 
-.testimonials blockquote {
-    font-style: italic;
-    border-left: 5px solid #007BFF;
-    padding-left: 15px;
-    margin-top: 20px;
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
 }
+
+/* Carousel Container */
+.testimonial-carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-control {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    color: #007BFF;
+    transition: color 0.3s;
+    user-select: none;
+}
+
+.carousel-control:hover {
+    color: #0056b3;
+}
+
+/* Testimonial Cards */
+.testimonial-cards {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.testimonial-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: none; /* Hide all cards initially */
+    transition: opacity 0.5s ease-in-out;
+    height: 200px; /* Set a fixed height for uniformity */
+    box-sizing: border-box;
+}
+
+.testimonial-card.active {
+    display: block; /* Display only the active card */
+}
+
+.testimonial-card p {
+    font-style: italic;
+    font-size: large;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.testimonial-card h4 {
+    font-weight: bold;
+    color: #1d0469;
+    text-align: right;
+    margin-top: auto; /* Ensures the author's name stays at the bottom */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .carousel-control {
+        font-size: 1.5rem;
+    }
+}
+
 
 
 
