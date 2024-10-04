@@ -178,8 +178,10 @@ nav ul li a {
 }
 
 .services-intro {
-    font-size: 1.0rem;
+    max-width: 800px;
+    margin: 0 auto;
     margin-bottom: 70px;
+    font-size: 1.0rem;
     color: #555;
 }
 
@@ -245,8 +247,6 @@ nav ul li a {
     }
 }
 
-
-
 /* Testimonials Section */
 .testimonials {
     padding: 40px 20px;
@@ -261,6 +261,8 @@ nav ul li a {
     padding-left: 15px;
     margin-top: 20px;
 }
+
+
 
 /* Service Details Section */
 .service-details {
