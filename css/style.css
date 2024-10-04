@@ -11,15 +11,18 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #edebfb;
 }
 
 /* Navigation Bar */
 nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     list-style: none;
-    padding: 0;
-    background: #007BFF;
+    gap: 20px;
+    padding: 5px;
+    padding-right: 6%;
+    background: #001d3c;
     margin: 0;
 }
 
@@ -29,8 +32,9 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+    color: #d1d2d3;
+    font-weight: 400;
+    font-size: 100%;
     padding: 15px;
     display: block;
 }
@@ -40,7 +44,7 @@ nav ul li a {
     position: relative;
     text-align: center;
     padding: 150px 20px; /* Increased padding for better content visibility */
-    background: url('../images/business-and-financial-investment.jpg') no-repeat center center/cover;
+    background: url('../images/dubai.jpg') no-repeat center center/cover;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -50,7 +54,6 @@ nav ul li a {
 }
 
 .hero-content {
-    /* background: rgba(41, 41, 41, 0.5); */
     background-color: rgb(255, 255, 255 / 5%);
     box-shadow: 0 0 5px rgb(0, 0, 0 / 15%);
     backdrop-filter: blur(10px);
@@ -70,25 +73,96 @@ nav ul li a {
 
 .cta-button {
     text-decoration: none;
+    color: #010e5a;
+    background-color: #edebfb;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border-style: groove;
+    border-width: 2px;
+}
+
+.cta-button:hover {
+    background-color: #1d0469;
     color: #fff;
-    background-color: #28a745;
+    border: none;
+}
+
+/* Company Overview Section */
+.company-overview {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.company-overview h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+}
+
+/* Overview Content */
+.overview-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.overview-image {
+    flex: 1 1 45%;
+    text-align: center;
+}
+
+.overview-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.overview-text {
+    flex: 1 1 45%;
+    padding: 20px;
+}
+
+.overview-text p {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+}
+
+.cta-button-2 {
+    text-decoration: none;
+    color: #edebfb;
+    background-color: #010e5a;
     padding: 15px 30px;
     font-size: 1rem;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
-.cta-button:hover {
-    background-color: #218838;
+.cta-button-2:hover {
+    background-color: #edebfb;
+    color: #1d0469;
+    border-style: groove;
+    border-width: 2px;
 }
 
-/* Company Overview Section */
-.company-overview {
-    padding: 40px 20px;
-    max-width: 800px;
-    margin: 20px auto;
-    text-align: center;
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .overview-content {
+        flex-direction: column;
+    }
+
+    .overview-image, .overview-text {
+        flex: 1 1 100%;
+    }
+
+    .overview-image {
+        margin-bottom: 20px;
+    }
 }
+
 
 /* Featured Services Section */
 .featured-services {
