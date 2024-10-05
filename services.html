@@ -5,27 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services - SavingsBanking</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- Load the Montserrat Font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Our Services</a></li>
+                <li><a href="services.html" class="active">Our Services</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
-    <section class="services">
+
+    <!-- Services Introduction Section -->
+    <section class="services-intro">
         <h2>Our Services</h2>
-        <ul>
-            <li>Investment Consulting</li>
-            <li>Financial Planning</li>
-            <li>Wealth Management</li>
-            <li>Retirement Planning</li>
-        </ul>
+        <p>At SavingsBanking, we provide a wide range of customized investment solutions designed to meet the specific needs of each of our clients. Our services are tailored to help you achieve your financial goals with confidence.</p>
+        <p>Whether you are an individual looking to grow your personal wealth, a business aiming to expand, or someone who is preparing for retirement, we have the expertise and solutions to guide you. Our team of financial experts leverages market insights, advanced technology, and proven strategies to deliver personalized and effective investment plans.</p>
+        <p>We believe in a client-first approach, ensuring that our services are aligned with your unique objectives. With a commitment to transparency, integrity, and excellence, SavingsBanking provides solutions ranging from wealth management and corporate investment to retirement planning and beyond. Our mission is to create value, mitigate risk, and empower you to make informed financial decisions at every step of your journey.</p>
+        <p>Explore our diverse range of services below to find out how we can help you secure a prosperous financial future.</p>
+    </section>    
+
+    <!-- Services Cards Section -->
+    <section class="services-list">
+        <div class="services-cards">
+            <div class="service-card">
+                <img src="images/products-and-services.webp" alt="Investment Consulting">
+                <h3 class="service-card-header">Investment Consulting</h3>
+                <p>Get expert advice on how to grow and manage your investments effectively. Our team of consultants is here to guide you every step of the way.</p>
+                <a href="services/service1.html" class="cta-button">Learn More</a>
+            </div>
+            <div class="service-card">
+                <img src="images/products-and-services.webp" alt="Wealth Management">
+                <h3 class="service-card-header">Wealth Management</h3>
+                <p>Our comprehensive wealth management services are designed to maximize the potential of your portfolio and secure your financial future.</p>
+                <a href="services/service2.html" class="cta-button">Learn More</a>
+            </div>
+            <div class="service-card">
+                <img src="images/products-and-services.webp" alt="Retirement Planning">
+                <h3 class="service-card-header">Retirement Planning</h3>
+                <p>Plan for a secure and comfortable retirement with our personalized strategies that are aligned with your long-term goals.</p>
+                <a href="services/service3.html" class="cta-button">Learn More</a>
+            </div>
+            <div class="service-card">
+                <img src="images/products-and-services.webp" alt="Corporate Investment">
+                <h3 class="service-card-header">Corporate Investment</h3>
+                <p>We provide strategic investment options for businesses looking to grow, expand, or diversify in today’s market.</p>
+                <a href="services/service4.html" class="cta-button">Learn More</a>
+            </div>
+        </div>
     </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-contact-us">
+        <div class="cta-content">
+            <h2>Ready to Start Investing with Us?</h2>
+            <p>If you're ready to take the next step towards financial freedom, our team is here to assist. Reach out today to learn how we can help you achieve your investment goals.</p>
+            <a href="contact.html" class="cta-button">Contact Us Today</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 SavingsBanking. All rights reserved.</p>
     </footer>
