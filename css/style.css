@@ -695,3 +695,182 @@ h2 {
         width: 100%;
     }
 }
+
+
+
+
+
+/***************************** CONTACT US ***************************/
+
+/* General Section Styling */
+.contact-us-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-intro, .contact-form-info, .additional-contact-info {
+    padding: 40px 20px;
+    max-width: 1200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-intro {
+    padding-bottom: 0;
+}
+
+.contact-intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-intro p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Contact Form and Information Section */
+.contact-form-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 5rem;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #f9f9f9;
+    margin-bottom: 40px;
+}
+
+/* Contact Form Container Styling */
+.contact-form-container, .contact-info-container {
+    flex: 1 1 45%;
+    padding: 30px;
+    text-align: left;
+}
+
+.contact-form-container h3, .contact-info-container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1d0469;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
+/* Submit Button Styling */
+button.cta-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #1d0469;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Contact Information Container Styling */
+.contact-info-container .contact-details p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contact-info-container .contact-details a {
+    color: #1d0469;
+    text-decoration: none;
+}
+
+.contact-info-container .contact-details a:hover {
+    text-decoration: underline;
+}
+
+/* Google Map Container */
+.map-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.map-container h4 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1d0469;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .contact-form-info {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contact-form-container, .contact-info-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-intro h2 {
+        font-size: 2rem;
+    }
+
+    .contact-form-container h3, .contact-info-container h3, .map-container h4 {
+        font-size: 1.5rem;
+    }
+
+    input, textarea {
+        font-size: 0.9rem;
+    }
+
+    button.cta-button {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
