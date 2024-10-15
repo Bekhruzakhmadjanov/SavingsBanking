@@ -592,7 +592,7 @@ img {
 
 /* Call to Action Section */
 .cta-contact-us {
-    padding: 60px 20px;
+    padding: 60px 40px;
     background-color: #1d0469;
     color: #fff;
     border-radius: 10px;
@@ -614,11 +614,19 @@ img {
     .service-card {
         width: calc(50% - 20px);
     }
+    
+    .cta-contact-us {
+        margin: 20px 10px;  /* Add more margin to the sides */
+    }
 }
 
 @media (max-width: 480px) {
     .service-card {
         width: 100%;
+    }
+
+    .cta-contact-us {
+        margin: 20px 15px;  /* Ensure space on the sides */
     }
 }
 
