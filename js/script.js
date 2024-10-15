@@ -1,3 +1,8 @@
+function toggleMenu() {
+    const nav = document.querySelector('.nav-links');
+    nav.classList.toggle('active');
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     let currentSlide = 0; // Start with the first slide
     const slides = document.querySelectorAll('.testimonial-card');
