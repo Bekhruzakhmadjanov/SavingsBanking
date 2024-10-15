@@ -47,6 +47,12 @@ img {
     font-size: 100%;
     padding: 15px;
     display: block;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Hover effect */
+.nav-links li a:hover {
+    color: #ffca28;
 }
 
 /* Burger Menu */
@@ -146,19 +152,50 @@ img {
         background-size: cover;
     }
 
+    .hero-content {
+        padding: 30px; /* Smaller padding for mobile */
+        border-radius: 15px;
+    }
+
     .hero h1 {
-        font-size: 2.2rem;
+        font-size: 2rem; /* Reduce heading size */
     }
 
     .hero p {
-        font-size: 1.2rem;
+        font-size: 1.2rem; /* Reduce paragraph size */
+    }
+
+    .cta-button {
+        font-size: 0.9rem; /* Adjust button size */
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content {
+        padding: 20px; /* Even smaller padding for smaller devices */
+        border-radius: 10px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem; /* Further reduce heading size */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Further reduce paragraph size */
+    }
+
+    .cta-button {
+        font-size: 0.8rem;
+        padding: 10px 20px;
     }
 }
 
 
+
 /* Company Overview Section */
 .company-overview {
-    padding: 40px 20px;
+    padding: 20px;
     max-width: 1200px;
     margin: 20px auto;
 }
@@ -219,7 +256,7 @@ img {
 
 /* Featured Services Section */
 .featured-services {
-    padding: 40px 20px;
+    padding: 0 20px 20px 20px;
     max-width: 1200px;
     margin: 20px auto;
     text-align: center;
@@ -227,14 +264,14 @@ img {
 
 .featured-services h2 {
     font-size: 2.5rem;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     color: #343434;
 }
 
 .home-services-intro {
     max-width: 1200px;
     margin: 0 auto;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     font-size: 1rem;
     color: #555;
 }
@@ -270,16 +307,17 @@ img {
 }
 
 .service-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 15px 10px;
-    background-color: #007BFF;
-    color: #fff;
+    color: #1d0469;
     margin: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    height: 110px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    background: #010e5ad1;
+    background: #f9f9f9;
     transition: background 1.5s;
 }
 
@@ -303,7 +341,7 @@ img {
 
 /* Testimonials Section */
 .testimonials {
-    padding: 40px 20px;
+    padding: 10px 20px 40px 20px;
     max-width: 1200px;
     margin: 20px auto;
     text-align: center;
@@ -536,7 +574,7 @@ img {
     height: 150px;
     object-fit: cover;
     border-radius: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .service-card .service-card-header {
@@ -827,10 +865,12 @@ button.cta-button:hover {
 .footer-contact a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
 .footer-contact a:hover {
     text-decoration: underline;
+    color: #ffca28;
 }
 
 /* Social Media Links */
