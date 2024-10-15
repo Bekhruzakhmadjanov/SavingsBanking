@@ -394,7 +394,6 @@ img {
     text-align: left;
     display: none;
     transition: opacity 0.5s ease-in-out;
-    height: 200px;
     box-sizing: border-box;
 }
 
