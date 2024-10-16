@@ -107,6 +107,8 @@ img {
     align-items: center;
     height: 70vh;
     background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
 }
 
 .hero-content {
@@ -149,7 +151,9 @@ img {
     .hero {
         padding: 100px 20px;
         height: auto;
-        background-size: cover;
+        background-size: contain; /* Change background-size for better fit on mobile */
+        background-position: center; /* Ensure it stays centered */
+        background-attachment: scroll; /* Disable fixed background on mobile */
     }
 
     .hero-content {
@@ -172,6 +176,12 @@ img {
 }
 
 @media (max-width: 480px) {
+    .hero {
+        padding: 80px 20px;
+        background-size: contain; /* Ensure full image visibility */
+        background-attachment: scroll; /* Disable parallax on mobile for better performance */
+    }
+    
     .hero-content {
         padding: 20px; /* Even smaller padding for smaller devices */
         border-radius: 10px;
