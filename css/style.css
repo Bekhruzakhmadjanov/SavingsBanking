@@ -107,6 +107,8 @@ img {
     align-items: center;
     height: 70vh;
     background-attachment: fixed;
+    background-size: cover; /* Ensures the image covers the hero area */
+    background-position: center center;
 }
 
 .hero-content {
