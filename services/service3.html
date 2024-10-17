@@ -5,17 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service 3 - SavingsBanking</title>
     <link rel="stylesheet" href="../css/style.css">
+    <!-- Load the Montserrat Font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header Section -->
     <header>
         <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../about.html">About Us</a></li>
-                <li><a href="../services.html">Our Services</a></li>
-                <li><a href="../contact.html">Contact Us</a></li>
-            </ul>
+            <div class="header-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="../images/SavingbankingBIG.png" alt="Logo" />
+                    </a>
+                </div>
+                <!-- Burger menu icon for mobile users -->
+                <div class="burger-menu" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="../services.html">Our Services</a></li>
+                    <li><a href="../contact.html">Contact Us</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -99,5 +116,7 @@
         </div>
     </footer>
 
+     <!-- Link to JavaScript File -->
+     <script src="../js/script.js"></script>
 </body>
 </html>
