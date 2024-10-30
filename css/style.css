@@ -19,8 +19,6 @@ img {
     height: auto;
 }
 
-
-/* General Navigation Styles */
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -47,7 +45,18 @@ img {
     font-size: 100%;
     padding: 15px;
     display: block;
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* UAE Flag */
+.uae-flag img {
+    height: 30px;
+    margin-left: 20px;
+}
+
+.uae-flag {
+    display: flex;
+    align-items: center;
 }
 
 /* Hover effect */
@@ -92,6 +101,7 @@ img {
         display: flex;
     }
 }
+
 
 
 
@@ -153,25 +163,29 @@ img {
         height: auto;
         background-size: cover;
         /* background-size: 100% 100%;   */
-        background-position: center center; 
+        background-position: center center;
         background-attachment: scroll;
     }
 
     .hero-content {
-        padding: 30px; /* Smaller padding for mobile */
+        padding: 30px;
+        /* Smaller padding for mobile */
         border-radius: 15px;
     }
 
     .hero h1 {
-        font-size: 2rem; /* Reduce heading size */
+        font-size: 2rem;
+        /* Reduce heading size */
     }
 
     .hero p {
-        font-size: 1.2rem; /* Reduce paragraph size */
+        font-size: 1.2rem;
+        /* Reduce paragraph size */
     }
 
     .cta-button {
-        font-size: 0.9rem; /* Adjust button size */
+        font-size: 0.9rem;
+        /* Adjust button size */
         padding: 12px 25px;
     }
 }
@@ -183,18 +197,21 @@ img {
         background-size: cover;
         background-attachment: scroll;
     }
-    
+
     .hero-content {
-        padding: 20px; /* Even smaller padding for smaller devices */
+        padding: 20px;
+        /* Even smaller padding for smaller devices */
         border-radius: 10px;
     }
 
     .hero h1 {
-        font-size: 1.8rem; /* Further reduce heading size */
+        font-size: 1.8rem;
+        /* Further reduce heading size */
     }
 
     .hero p {
-        font-size: 1rem; /* Further reduce paragraph size */
+        font-size: 1rem;
+        /* Further reduce paragraph size */
     }
 
     .cta-button {
@@ -255,7 +272,8 @@ img {
         flex-direction: column;
     }
 
-    .overview-image, .overview-text {
+    .overview-image,
+    .overview-text {
         flex: 1 1 100%;
     }
 
@@ -516,7 +534,8 @@ img {
         flex-direction: column;
     }
 
-    .service-image, .service-description {
+    .service-image,
+    .service-description {
         flex: 1 1 100%;
     }
 }
@@ -525,14 +544,17 @@ img {
 
 /***************************** OUR SERVICES ***************************/
 /* General Section Styling */
-.services-intro, .services-list, .cta-contact-us {
+.services-intro,
+.services-list,
+.cta-contact-us {
     padding: 40px 20px;
     max-width: 1200px;
     margin: 40px auto;
     text-align: center;
 }
 
-.services-intro, .cta-contact-us {
+.services-intro,
+.cta-contact-us {
     margin-top: 0;
 }
 
@@ -626,9 +648,10 @@ img {
     .service-card {
         width: calc(50% - 20px);
     }
-    
+
     .cta-contact-us {
-        margin: 20px 10px;  /* Add more margin to the sides */
+        margin: 20px 10px;
+        /* Add more margin to the sides */
     }
 }
 
@@ -638,7 +661,8 @@ img {
     }
 
     .cta-contact-us {
-        margin: 20px 15px;  /* Ensure space on the sides */
+        margin: 20px 15px;
+        /* Ensure space on the sides */
     }
 }
 
@@ -656,7 +680,9 @@ img {
     align-items: center;
 }
 
-.contact-intro, .contact-form-info, .additional-contact-info {
+.contact-intro,
+.contact-form-info,
+.additional-contact-info {
     padding: 40px 20px;
     max-width: 1200px;
     text-align: center;
@@ -696,13 +722,15 @@ img {
 }
 
 /* Contact Form Container Styling */
-.contact-form-container, .contact-info-container {
+.contact-form-container,
+.contact-info-container {
     flex: 1 1 45%;
     padding: 30px;
     text-align: left;
 }
 
-.contact-form-container h3, .contact-info-container h3 {
+.contact-form-container h3,
+.contact-info-container h3 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 2rem;
@@ -722,7 +750,8 @@ label {
     color: #333;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ddd;
@@ -796,7 +825,8 @@ button.cta-button:hover {
         padding: 20px;
     }
 
-    .contact-form-container, .contact-info-container {
+    .contact-form-container,
+    .contact-info-container {
         width: 100%;
         margin-bottom: 20px;
     }
@@ -807,11 +837,14 @@ button.cta-button:hover {
         font-size: 2rem;
     }
 
-    .contact-form-container h3, .contact-info-container h3, .map-container h4 {
+    .contact-form-container h3,
+    .contact-info-container h3,
+    .map-container h4 {
         font-size: 1.5rem;
     }
 
-    input, textarea {
+    input,
+    textarea {
         font-size: 0.9rem;
     }
 
@@ -848,10 +881,13 @@ button.cta-button:hover {
 }
 
 /* Footer Links Section */
-.footer-links h4, .footer-contact h4, .footer-social h4 {
+.footer-links h4,
+.footer-contact h4,
+.footer-social h4 {
     font-size: 1.5rem;
     margin-bottom: 20px;
-    color: #fff; /* Accent color for headings */
+    color: #fff;
+    /* Accent color for headings */
     font-weight: bold;
 }
 
